@@ -24,6 +24,11 @@ class hexcalcVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by hexcalcParser#HexFloatNumber.
+    def visitHexFloatNumber(self, ctx:hexcalcParser.HexFloatNumberContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by hexcalcParser#Variable.
     def visitVariable(self, ctx:hexcalcParser.VariableContext):
         return self.visitChildren(ctx)

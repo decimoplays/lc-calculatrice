@@ -35,6 +35,15 @@ class hexcalcListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by hexcalcParser#HexFloatNumber.
+    def enterHexFloatNumber(self, ctx:hexcalcParser.HexFloatNumberContext):
+        pass
+
+    # Exit a parse tree produced by hexcalcParser#HexFloatNumber.
+    def exitHexFloatNumber(self, ctx:hexcalcParser.HexFloatNumberContext):
+        pass
+
+
     # Enter a parse tree produced by hexcalcParser#Variable.
     def enterVariable(self, ctx:hexcalcParser.VariableContext):
         pass

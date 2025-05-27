@@ -45,10 +45,22 @@ class EvalVisitor(hexcalcVisitor):
         if ctx.op.text == '*':
             return left * right
         else:
-            return left // right  # division entière
+            return left / right  # division entière
 
     def visitParens(self, ctx):
         return self.visit(ctx.expression())
+    
+    def visitHexFloatNumber(self, ctx):
+        text = ctx.HEXFLOAT().getText()
+        parts = text.split('.')
+        if len(parts) != 2:
+            raise ValueError(f"Invalid hex float: {text}")
+        integer_part, frac_part = parts
+        
+        int_value = int(integer_part, 16)
+        frac_value = sum(int(char, 16) * (16 ** -(i + 1)) for i, char in enumerate(frac_part))
+        
+        return int_value + frac_value
 
     def visitHexNumber(self, ctx):
         return int(ctx.HEX().getText(), 16)  # parse hex string into int
@@ -66,6 +78,29 @@ class EvalVisitor(hexcalcVisitor):
     def visitUnaryMinus(self, ctx):
         value = self.visit(ctx.expression())
         return - value
+    
+def float_to_hexfloat(x, precision=4):
+    if x < 0:
+        return '-' + float_to_hexfloat(-x, precision)
+
+    int_part = int(x)
+    frac_part = x - int_part
+
+    int_hex = format(int_part, 'X')
+
+    if frac_part == 0:
+        return int_hex
+
+    frac_hex = ''
+    for _ in range(precision):
+        frac_part *= 16
+        digit = int(frac_part)
+        frac_hex += format(digit, 'X')
+        frac_part -= digit
+        if frac_part == 0:
+            break
+
+    return f"{int_hex}.{frac_hex}"
 
 # Fonction principale
 def evaluate_expression(expr: str, visitor: EvalVisitor):
@@ -76,8 +111,8 @@ def evaluate_expression(expr: str, visitor: EvalVisitor):
     tree = parser.prog()
     
     result = visitor.visit(tree)
-    if isinstance(result, int):
-        return hex(result).upper()[2:] # retourne le résultat en base 16 (ex: '1F')
+    if isinstance(result, (int, float)):
+        return float_to_hexfloat(result) # retourne le résultat en base 16 (ex: '1F')
     return None # n'affiche rien
 
 
