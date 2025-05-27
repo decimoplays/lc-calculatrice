@@ -9,6 +9,26 @@ else:
 
 class hexcalcVisitor(ParseTreeVisitor):
 
+    # Visit a parse tree produced by hexcalcParser#prog.
+    def visitProg(self, ctx:hexcalcParser.ProgContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by hexcalcParser#Assign.
+    def visitAssign(self, ctx:hexcalcParser.AssignContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by hexcalcParser#Expr.
+    def visitExpr(self, ctx:hexcalcParser.ExprContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by hexcalcParser#Variable.
+    def visitVariable(self, ctx:hexcalcParser.VariableContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by hexcalcParser#Mod.
     def visitMod(self, ctx:hexcalcParser.ModContext):
         return self.visitChildren(ctx)

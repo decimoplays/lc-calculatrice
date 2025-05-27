@@ -8,6 +8,42 @@ else:
 # This class defines a complete listener for a parse tree produced by hexcalcParser.
 class hexcalcListener(ParseTreeListener):
 
+    # Enter a parse tree produced by hexcalcParser#prog.
+    def enterProg(self, ctx:hexcalcParser.ProgContext):
+        pass
+
+    # Exit a parse tree produced by hexcalcParser#prog.
+    def exitProg(self, ctx:hexcalcParser.ProgContext):
+        pass
+
+
+    # Enter a parse tree produced by hexcalcParser#Assign.
+    def enterAssign(self, ctx:hexcalcParser.AssignContext):
+        pass
+
+    # Exit a parse tree produced by hexcalcParser#Assign.
+    def exitAssign(self, ctx:hexcalcParser.AssignContext):
+        pass
+
+
+    # Enter a parse tree produced by hexcalcParser#Expr.
+    def enterExpr(self, ctx:hexcalcParser.ExprContext):
+        pass
+
+    # Exit a parse tree produced by hexcalcParser#Expr.
+    def exitExpr(self, ctx:hexcalcParser.ExprContext):
+        pass
+
+
+    # Enter a parse tree produced by hexcalcParser#Variable.
+    def enterVariable(self, ctx:hexcalcParser.VariableContext):
+        pass
+
+    # Exit a parse tree produced by hexcalcParser#Variable.
+    def exitVariable(self, ctx:hexcalcParser.VariableContext):
+        pass
+
+
     # Enter a parse tree produced by hexcalcParser#Mod.
     def enterMod(self, ctx:hexcalcParser.ModContext):
         pass
