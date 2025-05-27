@@ -2,7 +2,10 @@ grammar hexcalc;
 
 // Parser rules
 expression
-  : expression op=('*'|'/') expression     # MulDiv
+  : '-' expression                         # UnaryMinus
+  | expression '^' expression              # Power
+  | expression op=('*'|'/') expression     # MulDiv
+  | expression '%' expression              # Mod
   | expression op=('+'|'-') expression     # AddSub
   | '(' expression ')'                     # Parens
   | HEX                                    # HexNumber

@@ -26,6 +26,20 @@ class EvalVisitor(hexcalcVisitor):
 
     def visitHexNumber(self, ctx):
         return int(ctx.HEX().getText(), 16)  # parse hex string into int
+    
+    def visitPower(self, ctx):
+        left = self.visit(ctx.expression(0))
+        right = self.visit(ctx.expression(1))
+        return left ** right
+    
+    def visitMod(self, ctx):
+        left = self.visit(ctx.expression(0))
+        right = self.visit(ctx.expression(1))
+        return left % right
+    
+    def visitUnaryMinus(self, ctx):
+        value = self.visit(ctx.expression())
+        return - value
 
 # Fonction principale
 def evaluate_expression(expr: str):

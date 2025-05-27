@@ -9,6 +9,11 @@ else:
 
 class hexcalcVisitor(ParseTreeVisitor):
 
+    # Visit a parse tree produced by hexcalcParser#Mod.
+    def visitMod(self, ctx:hexcalcParser.ModContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by hexcalcParser#MulDiv.
     def visitMulDiv(self, ctx:hexcalcParser.MulDivContext):
         return self.visitChildren(ctx)
@@ -24,8 +29,18 @@ class hexcalcVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by hexcalcParser#UnaryMinus.
+    def visitUnaryMinus(self, ctx:hexcalcParser.UnaryMinusContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by hexcalcParser#HexNumber.
     def visitHexNumber(self, ctx:hexcalcParser.HexNumberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by hexcalcParser#Power.
+    def visitPower(self, ctx:hexcalcParser.PowerContext):
         return self.visitChildren(ctx)
 
 
