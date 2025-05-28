@@ -87,16 +87,34 @@ class EvalVisitor(hexcalcVisitor):
         value = self.visit(ctx.expression())
         return - value
     
-    def visitMinMax(self, ctx):
-        func_name = ctx.ID().getText().lower()                      # récupère "max" ou “min" et le transforme en chaine de caractère.
-        args = [self.visit(expr) for expr in ctx.expression()]      # permet de transformer les expressions hexadécimales en nombres entiers
+    def visitFuncCall(self, ctx):
+        func_name = ctx.functionCall().funcName.text.lower()  # on utilise ID()
+        args = [self.visit(expr) for expr in ctx.functionCall().argList().expression()] if ctx.functionCall().argList() else []
 
         if func_name == "max":
             return max(args)
         elif func_name == "min":
             return min(args)
-    
-        # Fonctions de comparaison attendent exactement 2 arguments
+        elif func_name == "exp":
+            return self._exp(args[0])
+        elif func_name == "ln":
+            if args[0] <= 0:
+                raise ValueError("ln(x) : x doit être > 0")
+            return self._ln(args[0])
+        elif func_name == "floor":
+            return self.floor_custom(args[0])
+        elif func_name == "ceil":
+            return self.ceil_custom(args[0])
+        elif func_name == "tohex":
+            self.decimal = True
+            try:
+                args = [self.visit(expr) for expr in ctx.functionCall().argList().expression()] if ctx.functionCall().argList() else []
+                return float_to_hexfloat(args[0])
+            finally:
+                self.decimal = False
+        elif func_name == "todec":
+            return str(int(args[0]))
+        
         elif func_name in ("lt", "eq", "gt"):
             if len(args) != 2:
                 raise ValueError(f"{func_name} attend exactement 2 arguments")
@@ -107,39 +125,10 @@ class EvalVisitor(hexcalcVisitor):
                 return a == b
             elif func_name == "gt":
                 return a > b
+            
         else:
-            raise ValueError(f"Fonction inconnue : {func_name}")
-    
-        
-    def visitExpLn(self, ctx):
-        func_name = ctx.ID().getText().lower()
-        arg = self.visit(ctx.expression())
+            raise ValueError(f"Unknown function: {func_name}")
 
-        if func_name == "exp":
-            return self._exp(arg)
-        elif func_name == "ln":
-            if arg <= 0:
-                raise ValueError("ln(x) : x doit être > 0")
-            return self._ln(arg)
-        elif func_name == "floor":
-            return self.floor_custom(arg)
-        elif func_name == "ceil":
-            return self.ceil_custom(arg)
-        elif func_name == "tohex":
-        # Convertit l'argument en int puis en hex sans '0x'
-            self.decimal = True
-            try:
-                value = self.visit(ctx.expression())
-            finally:
-                self.decimal = False
-            return float_to_hexfloat(value) #format(int(arg), 'X')
-        
-        elif func_name == "todec":
-            # Convertit l'argument (supposé hex string) en décimal string
-            # Ici arg est un nombre, on le convertit en int puis string
-            return str(int(arg))
-        else:
-            raise ValueError(f"Unknown Function : {func_name}")
         
     def _exp(self, x, terms=20):
         result = 1.0

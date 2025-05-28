@@ -11,8 +11,7 @@ statement
   ;
 
 expression
-  : ID '(' expression ')'                     # ExpLn
-  | ID '(' expression (',' expression)* ')'   # MinMax
+  : functionCall                              # FuncCall
   | '-' expression                            # UnaryMinus
   | expression '^' expression                 # Power
   | expression op=('*'|'/') expression        # MulDiv
@@ -20,10 +19,18 @@ expression
   | expression op=('+'|'-') expression        # AddSub
   | '(' expression ')'                        # Parens
   | HEXFLOAT                                  # HexFloatNumber
-  | ID                                        # Variable
   | HEX                                       # HexNumber
+  | ID                                        # Variable
   ;
 
+functionCall
+  : funcName=ID '(' argList? ')'  // fonction avec 0 ou plusieurs arguments
+  ;
+
+argList
+  : expression (',' expression)* // arguments séparés par des virgules
+  ;
+  
 // Lexer rules
 ID  : [a-z_][a-zA-Z_0-9]* ;
 HEXFLOAT: [0-9A-F]+ '.' [0-9A-F]+;   

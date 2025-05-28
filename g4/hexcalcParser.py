@@ -10,28 +10,29 @@ else:
 
 def serializedATN():
     return [
-        4,1,14,66,2,0,7,0,2,1,7,1,2,2,7,2,1,0,4,0,8,8,0,11,0,12,0,9,1,0,
-        1,0,1,1,1,1,1,1,1,1,3,1,18,8,1,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
-        2,1,2,1,2,5,2,31,8,2,10,2,12,2,34,9,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
-        2,1,2,1,2,1,2,1,2,3,2,47,8,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,
-        1,2,1,2,1,2,5,2,61,8,2,10,2,12,2,64,9,2,1,2,0,1,4,3,0,2,4,0,2,1,
-        0,7,8,2,0,5,5,10,10,75,0,7,1,0,0,0,2,17,1,0,0,0,4,46,1,0,0,0,6,8,
-        3,2,1,0,7,6,1,0,0,0,8,9,1,0,0,0,9,7,1,0,0,0,9,10,1,0,0,0,10,11,1,
-        0,0,0,11,12,5,0,0,1,12,1,1,0,0,0,13,14,5,11,0,0,14,15,5,1,0,0,15,
-        18,3,4,2,0,16,18,3,4,2,0,17,13,1,0,0,0,17,16,1,0,0,0,18,3,1,0,0,
-        0,19,20,6,2,-1,0,20,21,5,11,0,0,21,22,5,2,0,0,22,23,3,4,2,0,23,24,
-        5,3,0,0,24,47,1,0,0,0,25,26,5,11,0,0,26,27,5,2,0,0,27,32,3,4,2,0,
-        28,29,5,4,0,0,29,31,3,4,2,0,30,28,1,0,0,0,31,34,1,0,0,0,32,30,1,
-        0,0,0,32,33,1,0,0,0,33,35,1,0,0,0,34,32,1,0,0,0,35,36,5,3,0,0,36,
-        47,1,0,0,0,37,38,5,5,0,0,38,47,3,4,2,9,39,40,5,2,0,0,40,41,3,4,2,
-        0,41,42,5,3,0,0,42,47,1,0,0,0,43,47,5,12,0,0,44,47,5,11,0,0,45,47,
-        5,13,0,0,46,19,1,0,0,0,46,25,1,0,0,0,46,37,1,0,0,0,46,39,1,0,0,0,
-        46,43,1,0,0,0,46,44,1,0,0,0,46,45,1,0,0,0,47,62,1,0,0,0,48,49,10,
-        8,0,0,49,50,5,6,0,0,50,61,3,4,2,9,51,52,10,7,0,0,52,53,7,0,0,0,53,
-        61,3,4,2,8,54,55,10,6,0,0,55,56,5,9,0,0,56,61,3,4,2,7,57,58,10,5,
-        0,0,58,59,7,1,0,0,59,61,3,4,2,6,60,48,1,0,0,0,60,51,1,0,0,0,60,54,
-        1,0,0,0,60,57,1,0,0,0,61,64,1,0,0,0,62,60,1,0,0,0,62,63,1,0,0,0,
-        63,5,1,0,0,0,64,62,1,0,0,0,6,9,17,32,46,60,62
+        4,1,14,69,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,1,0,4,0,12,8,0,
+        11,0,12,0,13,1,0,1,0,1,1,1,1,1,1,1,1,3,1,22,8,1,1,2,1,2,1,2,1,2,
+        1,2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,35,8,2,1,2,1,2,1,2,1,2,1,2,1,2,1,
+        2,1,2,1,2,1,2,1,2,1,2,5,2,49,8,2,10,2,12,2,52,9,2,1,3,1,3,1,3,3,
+        3,57,8,3,1,3,1,3,1,4,1,4,1,4,5,4,64,8,4,10,4,12,4,67,9,4,1,4,0,1,
+        4,5,0,2,4,6,8,0,2,1,0,4,5,2,0,2,2,7,7,76,0,11,1,0,0,0,2,21,1,0,0,
+        0,4,34,1,0,0,0,6,53,1,0,0,0,8,60,1,0,0,0,10,12,3,2,1,0,11,10,1,0,
+        0,0,12,13,1,0,0,0,13,11,1,0,0,0,13,14,1,0,0,0,14,15,1,0,0,0,15,16,
+        5,0,0,1,16,1,1,0,0,0,17,18,5,11,0,0,18,19,5,1,0,0,19,22,3,4,2,0,
+        20,22,3,4,2,0,21,17,1,0,0,0,21,20,1,0,0,0,22,3,1,0,0,0,23,24,6,2,
+        -1,0,24,35,3,6,3,0,25,26,5,2,0,0,26,35,3,4,2,9,27,28,5,8,0,0,28,
+        29,3,4,2,0,29,30,5,9,0,0,30,35,1,0,0,0,31,35,5,12,0,0,32,35,5,13,
+        0,0,33,35,5,11,0,0,34,23,1,0,0,0,34,25,1,0,0,0,34,27,1,0,0,0,34,
+        31,1,0,0,0,34,32,1,0,0,0,34,33,1,0,0,0,35,50,1,0,0,0,36,37,10,8,
+        0,0,37,38,5,3,0,0,38,49,3,4,2,9,39,40,10,7,0,0,40,41,7,0,0,0,41,
+        49,3,4,2,8,42,43,10,6,0,0,43,44,5,6,0,0,44,49,3,4,2,7,45,46,10,5,
+        0,0,46,47,7,1,0,0,47,49,3,4,2,6,48,36,1,0,0,0,48,39,1,0,0,0,48,42,
+        1,0,0,0,48,45,1,0,0,0,49,52,1,0,0,0,50,48,1,0,0,0,50,51,1,0,0,0,
+        51,5,1,0,0,0,52,50,1,0,0,0,53,54,5,11,0,0,54,56,5,8,0,0,55,57,3,
+        8,4,0,56,55,1,0,0,0,56,57,1,0,0,0,57,58,1,0,0,0,58,59,5,9,0,0,59,
+        7,1,0,0,0,60,65,3,4,2,0,61,62,5,10,0,0,62,64,3,4,2,0,63,61,1,0,0,
+        0,64,67,1,0,0,0,65,63,1,0,0,0,65,66,1,0,0,0,66,9,1,0,0,0,67,65,1,
+        0,0,0,7,13,21,34,48,50,56,65
     ]
 
 class hexcalcParser ( Parser ):
@@ -44,8 +45,8 @@ class hexcalcParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'='", "'('", "')'", "','", "'-'", "'^'", 
-                     "'*'", "'/'", "'%'", "'+'" ]
+    literalNames = [ "<INVALID>", "'='", "'-'", "'^'", "'*'", "'/'", "'%'", 
+                     "'+'", "'('", "')'", "','" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
@@ -55,8 +56,10 @@ class hexcalcParser ( Parser ):
     RULE_prog = 0
     RULE_statement = 1
     RULE_expression = 2
+    RULE_functionCall = 3
+    RULE_argList = 4
 
-    ruleNames =  [ "prog", "statement", "expression" ]
+    ruleNames =  [ "prog", "statement", "expression", "functionCall", "argList" ]
 
     EOF = Token.EOF
     T__0=1
@@ -127,19 +130,19 @@ class hexcalcParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 7 
+            self.state = 11 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 6
+                self.state = 10
                 self.statement()
-                self.state = 9 
+                self.state = 13 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & 14372) != 0)):
+                if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & 14596) != 0)):
                     break
 
-            self.state = 11
+            self.state = 15
             self.match(hexcalcParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
@@ -225,24 +228,24 @@ class hexcalcParser ( Parser ):
         localctx = hexcalcParser.StatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_statement)
         try:
-            self.state = 17
+            self.state = 21
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
             if la_ == 1:
                 localctx = hexcalcParser.AssignContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
-                self.state = 13
+                self.state = 17
                 self.match(hexcalcParser.ID)
-                self.state = 14
+                self.state = 18
                 self.match(hexcalcParser.T__0)
-                self.state = 15
+                self.state = 19
                 self.expression(0)
                 pass
 
             elif la_ == 2:
                 localctx = hexcalcParser.ExprContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
-                self.state = 16
+                self.state = 20
                 self.expression(0)
                 pass
 
@@ -270,6 +273,31 @@ class hexcalcParser ( Parser ):
      
         def copyFrom(self, ctx:ParserRuleContext):
             super().copyFrom(ctx)
+
+
+    class FuncCallContext(ExpressionContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a hexcalcParser.ExpressionContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def functionCall(self):
+            return self.getTypedRuleContext(hexcalcParser.FunctionCallContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFuncCall" ):
+                listener.enterFuncCall(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFuncCall" ):
+                listener.exitFuncCall(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFuncCall" ):
+                return visitor.visitFuncCall(self)
+            else:
+                return visitor.visitChildren(self)
 
 
     class HexFloatNumberContext(ExpressionContext):
@@ -456,33 +484,6 @@ class hexcalcParser ( Parser ):
                 return visitor.visitChildren(self)
 
 
-    class ExpLnContext(ExpressionContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a hexcalcParser.ExpressionContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def ID(self):
-            return self.getToken(hexcalcParser.ID, 0)
-        def expression(self):
-            return self.getTypedRuleContext(hexcalcParser.ExpressionContext,0)
-
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterExpLn" ):
-                listener.enterExpLn(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitExpLn" ):
-                listener.exitExpLn(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitExpLn" ):
-                return visitor.visitExpLn(self)
-            else:
-                return visitor.visitChildren(self)
-
-
     class HexNumberContext(ExpressionContext):
 
         def __init__(self, parser, ctx:ParserRuleContext): # actually a hexcalcParser.ExpressionContext
@@ -503,36 +504,6 @@ class hexcalcParser ( Parser ):
         def accept(self, visitor:ParseTreeVisitor):
             if hasattr( visitor, "visitHexNumber" ):
                 return visitor.visitHexNumber(self)
-            else:
-                return visitor.visitChildren(self)
-
-
-    class MinMaxContext(ExpressionContext):
-
-        def __init__(self, parser, ctx:ParserRuleContext): # actually a hexcalcParser.ExpressionContext
-            super().__init__(parser)
-            self.copyFrom(ctx)
-
-        def ID(self):
-            return self.getToken(hexcalcParser.ID, 0)
-        def expression(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(hexcalcParser.ExpressionContext)
-            else:
-                return self.getTypedRuleContext(hexcalcParser.ExpressionContext,i)
-
-
-        def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterMinMax" ):
-                listener.enterMinMax(self)
-
-        def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitMinMax" ):
-                listener.exitMinMax(self)
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitMinMax" ):
-                return visitor.visitMinMax(self)
             else:
                 return visitor.visitChildren(self)
 
@@ -576,177 +547,145 @@ class hexcalcParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 46
+            self.state = 34
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,2,self._ctx)
             if la_ == 1:
-                localctx = hexcalcParser.ExpLnContext(self, localctx)
+                localctx = hexcalcParser.FuncCallContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
 
-                self.state = 20
-                self.match(hexcalcParser.ID)
-                self.state = 21
-                self.match(hexcalcParser.T__1)
-                self.state = 22
-                self.expression(0)
-                self.state = 23
-                self.match(hexcalcParser.T__2)
+                self.state = 24
+                self.functionCall()
                 pass
 
             elif la_ == 2:
-                localctx = hexcalcParser.MinMaxContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
-                self.state = 25
-                self.match(hexcalcParser.ID)
-                self.state = 26
-                self.match(hexcalcParser.T__1)
-                self.state = 27
-                self.expression(0)
-                self.state = 32
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                while _la==4:
-                    self.state = 28
-                    self.match(hexcalcParser.T__3)
-                    self.state = 29
-                    self.expression(0)
-                    self.state = 34
-                    self._errHandler.sync(self)
-                    _la = self._input.LA(1)
-
-                self.state = 35
-                self.match(hexcalcParser.T__2)
-                pass
-
-            elif la_ == 3:
                 localctx = hexcalcParser.UnaryMinusContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 37
-                self.match(hexcalcParser.T__4)
-                self.state = 38
+                self.state = 25
+                self.match(hexcalcParser.T__1)
+                self.state = 26
                 self.expression(9)
                 pass
 
-            elif la_ == 4:
+            elif la_ == 3:
                 localctx = hexcalcParser.ParensContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 39
-                self.match(hexcalcParser.T__1)
-                self.state = 40
+                self.state = 27
+                self.match(hexcalcParser.T__7)
+                self.state = 28
                 self.expression(0)
-                self.state = 41
-                self.match(hexcalcParser.T__2)
+                self.state = 29
+                self.match(hexcalcParser.T__8)
                 pass
 
-            elif la_ == 5:
+            elif la_ == 4:
                 localctx = hexcalcParser.HexFloatNumberContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 43
+                self.state = 31
                 self.match(hexcalcParser.HEXFLOAT)
+                pass
+
+            elif la_ == 5:
+                localctx = hexcalcParser.HexNumberContext(self, localctx)
+                self._ctx = localctx
+                _prevctx = localctx
+                self.state = 32
+                self.match(hexcalcParser.HEX)
                 pass
 
             elif la_ == 6:
                 localctx = hexcalcParser.VariableContext(self, localctx)
                 self._ctx = localctx
                 _prevctx = localctx
-                self.state = 44
+                self.state = 33
                 self.match(hexcalcParser.ID)
-                pass
-
-            elif la_ == 7:
-                localctx = hexcalcParser.HexNumberContext(self, localctx)
-                self._ctx = localctx
-                _prevctx = localctx
-                self.state = 45
-                self.match(hexcalcParser.HEX)
                 pass
 
 
             self._ctx.stop = self._input.LT(-1)
-            self.state = 62
+            self.state = 50
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,4,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    self.state = 60
+                    self.state = 48
                     self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input,4,self._ctx)
+                    la_ = self._interp.adaptivePredict(self._input,3,self._ctx)
                     if la_ == 1:
                         localctx = hexcalcParser.PowerContext(self, hexcalcParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 48
+                        self.state = 36
                         if not self.precpred(self._ctx, 8):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 8)")
-                        self.state = 49
-                        self.match(hexcalcParser.T__5)
-                        self.state = 50
+                        self.state = 37
+                        self.match(hexcalcParser.T__2)
+                        self.state = 38
                         self.expression(9)
                         pass
 
                     elif la_ == 2:
                         localctx = hexcalcParser.MulDivContext(self, hexcalcParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 51
+                        self.state = 39
                         if not self.precpred(self._ctx, 7):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 7)")
-                        self.state = 52
+                        self.state = 40
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
-                        if not(_la==7 or _la==8):
+                        if not(_la==4 or _la==5):
                             localctx.op = self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
-                        self.state = 53
+                        self.state = 41
                         self.expression(8)
                         pass
 
                     elif la_ == 3:
                         localctx = hexcalcParser.ModContext(self, hexcalcParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 54
+                        self.state = 42
                         if not self.precpred(self._ctx, 6):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 6)")
-                        self.state = 55
-                        self.match(hexcalcParser.T__8)
-                        self.state = 56
+                        self.state = 43
+                        self.match(hexcalcParser.T__5)
+                        self.state = 44
                         self.expression(7)
                         pass
 
                     elif la_ == 4:
                         localctx = hexcalcParser.AddSubContext(self, hexcalcParser.ExpressionContext(self, _parentctx, _parentState))
                         self.pushNewRecursionContext(localctx, _startState, self.RULE_expression)
-                        self.state = 57
+                        self.state = 45
                         if not self.precpred(self._ctx, 5):
                             from antlr4.error.Errors import FailedPredicateException
                             raise FailedPredicateException(self, "self.precpred(self._ctx, 5)")
-                        self.state = 58
+                        self.state = 46
                         localctx.op = self._input.LT(1)
                         _la = self._input.LA(1)
-                        if not(_la==5 or _la==10):
+                        if not(_la==2 or _la==7):
                             localctx.op = self._errHandler.recoverInline(self)
                         else:
                             self._errHandler.reportMatch(self)
                             self.consume()
-                        self.state = 59
+                        self.state = 47
                         self.expression(6)
                         pass
 
              
-                self.state = 64
+                self.state = 52
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,4,self._ctx)
 
         except RecognitionException as re:
             localctx.exception = re
@@ -754,6 +693,135 @@ class hexcalcParser ( Parser ):
             self._errHandler.recover(self, re)
         finally:
             self.unrollRecursionContexts(_parentctx)
+        return localctx
+
+
+    class FunctionCallContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+            self.funcName = None # Token
+
+        def ID(self):
+            return self.getToken(hexcalcParser.ID, 0)
+
+        def argList(self):
+            return self.getTypedRuleContext(hexcalcParser.ArgListContext,0)
+
+
+        def getRuleIndex(self):
+            return hexcalcParser.RULE_functionCall
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterFunctionCall" ):
+                listener.enterFunctionCall(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitFunctionCall" ):
+                listener.exitFunctionCall(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFunctionCall" ):
+                return visitor.visitFunctionCall(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def functionCall(self):
+
+        localctx = hexcalcParser.FunctionCallContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 6, self.RULE_functionCall)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 53
+            localctx.funcName = self.match(hexcalcParser.ID)
+            self.state = 54
+            self.match(hexcalcParser.T__7)
+            self.state = 56
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 14596) != 0):
+                self.state = 55
+                self.argList()
+
+
+            self.state = 58
+            self.match(hexcalcParser.T__8)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class ArgListContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def expression(self, i:int=None):
+            if i is None:
+                return self.getTypedRuleContexts(hexcalcParser.ExpressionContext)
+            else:
+                return self.getTypedRuleContext(hexcalcParser.ExpressionContext,i)
+
+
+        def getRuleIndex(self):
+            return hexcalcParser.RULE_argList
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterArgList" ):
+                listener.enterArgList(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitArgList" ):
+                listener.exitArgList(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitArgList" ):
+                return visitor.visitArgList(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def argList(self):
+
+        localctx = hexcalcParser.ArgListContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 8, self.RULE_argList)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 60
+            self.expression(0)
+            self.state = 65
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            while _la==10:
+                self.state = 61
+                self.match(hexcalcParser.T__9)
+                self.state = 62
+                self.expression(0)
+                self.state = 67
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
         return localctx
 
 

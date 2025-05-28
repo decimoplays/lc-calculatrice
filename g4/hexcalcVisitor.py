@@ -24,6 +24,11 @@ class hexcalcVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by hexcalcParser#FuncCall.
+    def visitFuncCall(self, ctx:hexcalcParser.FuncCallContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by hexcalcParser#HexFloatNumber.
     def visitHexFloatNumber(self, ctx:hexcalcParser.HexFloatNumberContext):
         return self.visitChildren(ctx)
@@ -59,23 +64,23 @@ class hexcalcVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by hexcalcParser#ExpLn.
-    def visitExpLn(self, ctx:hexcalcParser.ExpLnContext):
-        return self.visitChildren(ctx)
-
-
     # Visit a parse tree produced by hexcalcParser#HexNumber.
     def visitHexNumber(self, ctx:hexcalcParser.HexNumberContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by hexcalcParser#MinMax.
-    def visitMinMax(self, ctx:hexcalcParser.MinMaxContext):
+    # Visit a parse tree produced by hexcalcParser#Power.
+    def visitPower(self, ctx:hexcalcParser.PowerContext):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by hexcalcParser#Power.
-    def visitPower(self, ctx:hexcalcParser.PowerContext):
+    # Visit a parse tree produced by hexcalcParser#functionCall.
+    def visitFunctionCall(self, ctx:hexcalcParser.FunctionCallContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by hexcalcParser#argList.
+    def visitArgList(self, ctx:hexcalcParser.ArgListContext):
         return self.visitChildren(ctx)
 
 

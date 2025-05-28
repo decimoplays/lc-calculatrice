@@ -35,6 +35,15 @@ class hexcalcListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by hexcalcParser#FuncCall.
+    def enterFuncCall(self, ctx:hexcalcParser.FuncCallContext):
+        pass
+
+    # Exit a parse tree produced by hexcalcParser#FuncCall.
+    def exitFuncCall(self, ctx:hexcalcParser.FuncCallContext):
+        pass
+
+
     # Enter a parse tree produced by hexcalcParser#HexFloatNumber.
     def enterHexFloatNumber(self, ctx:hexcalcParser.HexFloatNumberContext):
         pass
@@ -98,15 +107,6 @@ class hexcalcListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by hexcalcParser#ExpLn.
-    def enterExpLn(self, ctx:hexcalcParser.ExpLnContext):
-        pass
-
-    # Exit a parse tree produced by hexcalcParser#ExpLn.
-    def exitExpLn(self, ctx:hexcalcParser.ExpLnContext):
-        pass
-
-
     # Enter a parse tree produced by hexcalcParser#HexNumber.
     def enterHexNumber(self, ctx:hexcalcParser.HexNumberContext):
         pass
@@ -116,21 +116,30 @@ class hexcalcListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by hexcalcParser#MinMax.
-    def enterMinMax(self, ctx:hexcalcParser.MinMaxContext):
-        pass
-
-    # Exit a parse tree produced by hexcalcParser#MinMax.
-    def exitMinMax(self, ctx:hexcalcParser.MinMaxContext):
-        pass
-
-
     # Enter a parse tree produced by hexcalcParser#Power.
     def enterPower(self, ctx:hexcalcParser.PowerContext):
         pass
 
     # Exit a parse tree produced by hexcalcParser#Power.
     def exitPower(self, ctx:hexcalcParser.PowerContext):
+        pass
+
+
+    # Enter a parse tree produced by hexcalcParser#functionCall.
+    def enterFunctionCall(self, ctx:hexcalcParser.FunctionCallContext):
+        pass
+
+    # Exit a parse tree produced by hexcalcParser#functionCall.
+    def exitFunctionCall(self, ctx:hexcalcParser.FunctionCallContext):
+        pass
+
+
+    # Enter a parse tree produced by hexcalcParser#argList.
+    def enterArgList(self, ctx:hexcalcParser.ArgListContext):
+        pass
+
+    # Exit a parse tree produced by hexcalcParser#argList.
+    def exitArgList(self, ctx:hexcalcParser.ArgListContext):
         pass
 
 
