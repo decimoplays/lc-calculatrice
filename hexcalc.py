@@ -8,6 +8,7 @@ class EvalVisitor(hexcalcVisitor):
     def __init__(self):
         self.variables = {}
         self.memory = None
+        self.decimal = False
     
     def visitProg(self, ctx):
         result = None
@@ -69,7 +70,8 @@ class EvalVisitor(hexcalcVisitor):
         return int_value + frac_value
 
     def visitHexNumber(self, ctx):
-        return int(ctx.HEX().getText(), 16)  # parse hex string into int
+        base = 10 if self.decimal else 16
+        return int(ctx.HEX().getText(), base)  # parse hex string into int
     
     def visitPower(self, ctx):
         left = self.visit(ctx.expression(0))
@@ -125,7 +127,13 @@ class EvalVisitor(hexcalcVisitor):
             return self.ceil_custom(arg)
         elif func_name == "tohex":
         # Convertit l'argument en int puis en hex sans '0x'
-            return format(int(arg), 'X')
+            self.decimal = True
+            try:
+                value = self.visit(ctx.expression())
+            finally:
+                self.decimal = False
+            return float_to_hexfloat(value) #format(int(arg), 'X')
+        
         elif func_name == "todec":
             # Convertit l'argument (supposé hex string) en décimal string
             # Ici arg est un nombre, on le convertit en int puis string

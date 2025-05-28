@@ -98,12 +98,30 @@ class hexcalcListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by hexcalcParser#ExpLn.
+    def enterExpLn(self, ctx:hexcalcParser.ExpLnContext):
+        pass
+
+    # Exit a parse tree produced by hexcalcParser#ExpLn.
+    def exitExpLn(self, ctx:hexcalcParser.ExpLnContext):
+        pass
+
+
     # Enter a parse tree produced by hexcalcParser#HexNumber.
     def enterHexNumber(self, ctx:hexcalcParser.HexNumberContext):
         pass
 
     # Exit a parse tree produced by hexcalcParser#HexNumber.
     def exitHexNumber(self, ctx:hexcalcParser.HexNumberContext):
+        pass
+
+
+    # Enter a parse tree produced by hexcalcParser#MinMax.
+    def enterMinMax(self, ctx:hexcalcParser.MinMaxContext):
+        pass
+
+    # Exit a parse tree produced by hexcalcParser#MinMax.
+    def exitMinMax(self, ctx:hexcalcParser.MinMaxContext):
         pass
 
 

@@ -59,8 +59,18 @@ class hexcalcVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by hexcalcParser#ExpLn.
+    def visitExpLn(self, ctx:hexcalcParser.ExpLnContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by hexcalcParser#HexNumber.
     def visitHexNumber(self, ctx:hexcalcParser.HexNumberContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by hexcalcParser#MinMax.
+    def visitMinMax(self, ctx:hexcalcParser.MinMaxContext):
         return self.visitChildren(ctx)
 
 
